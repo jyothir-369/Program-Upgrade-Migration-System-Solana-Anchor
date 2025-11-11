@@ -45,6 +45,8 @@ Program-Upgrade-Migration-System-Solana-Anchor/
 ├── db/migrations/                   # SQL migration scripts
 ├── Anchor.toml                      # Anchor configuration
 └── Cargo.toml                       # Rust workspace configuration
+
+
 🧠 3) Local Solana Setup
 powershell
 Copy code
@@ -59,12 +61,16 @@ solana-test-validator --reset
 
 # Airdrop SOL to wallet
 solana airdrop 10
+
+
+
 🏗️ 4) Build Anchor Program
 powershell
 Copy code
 # From project root
 anchor build
 This compiles the upgrade_manager program using the ID defined in Anchor.toml.
+
 
 🧩 5) Development Workflow
 Write or update program logic in programs/upgrade_manager/src/lib.rs
