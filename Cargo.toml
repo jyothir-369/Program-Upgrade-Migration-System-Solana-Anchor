@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "programs/upgrade_manager",
+    "backend/upgrade_service",
+]
+resolver = "2"

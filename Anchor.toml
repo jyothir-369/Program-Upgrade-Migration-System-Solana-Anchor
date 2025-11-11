@@ -1,0 +1,20 @@
+[features]
+seeds = true
+skip-lint = false
+init-if-needed = false
+
+[programs.localnet]
+upgrade_manager = "UpgrdMgr1111111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "anchor test"
+
+[workspace]
+members = ["programs/upgrade_manager"]
